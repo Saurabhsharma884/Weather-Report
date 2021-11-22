@@ -12,10 +12,13 @@
 
 .list-group-item {
   background-color: rgb(216, 216, 216);
-  
 }
 
 #aqi-box {
-  width: 100px;
-  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  padding: 5px;
 }

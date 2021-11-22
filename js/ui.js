@@ -30,23 +30,28 @@ class UI {
     switch (aqi) {
       case 1:
         aqiBox.style.backgroundColor = "rgb(0,176,80)";
+        aqiBox.innerText="GOOD"
         break;
       case 2:
         aqiBox.style.backgroundColor = "rgb(102,153,0)";
+        aqiBox.innerText="SATISFACTORY"
         break;
       case 3:
         aqiBox.style.backgroundColor = "rgb(229,184,183)";
+        aqiBox.innerText="MODERATE"
         break;
       case 4:
         aqiBox.style.backgroundColor = "rgb(255,192,0)";
-        aqiBox.innerText="MODERATE"
+        aqiBox.innerText="POOR"
         break;
       case 5:
         aqiBox.style.backgroundColor = "rgb(255,0,0)";
+        aqiBox.innerText="VERY POOR"
         break;
 
       default:
         aqiBox.style.backgroundColor = "rgb(192,0,0)";
+        aqiBox.innerText="SEVERE"
         break;
     }
   }
