@@ -20,5 +20,34 @@ class UI {
     this.feelsLike.textContent = `Feels Like : ${weather.current.feelslike_c} \u00B0C`;
     this.uv.textContent = `UV : ${weather.current.uv}`;
     this.wind.textContent = `Wind Speed : ${weather.current.wind_kph} mph`;
+    const aqi = weather.current.air_quality["us-epa-index"];
+    console.log(aqi)
+    this.setAQI(aqi);
+  }
+
+  setAQI(aqi) {
+    var aqiBox = document.getElementById("aqi-box");
+    switch (aqi) {
+      case 1:
+        aqiBox.style.backgroundColor = "rgb(0,176,80)";
+        break;
+      case 2:
+        aqiBox.style.backgroundColor = "rgb(102,153,0)";
+        break;
+      case 3:
+        aqiBox.style.backgroundColor = "rgb(229,184,183)";
+        break;
+      case 4:
+        aqiBox.style.backgroundColor = "rgb(255,192,0)";
+        aqiBox.innerText="MODERATE"
+        break;
+      case 5:
+        aqiBox.style.backgroundColor = "rgb(255,0,0)";
+        break;
+
+      default:
+        aqiBox.style.backgroundColor = "rgb(192,0,0)";
+        break;
+    }
   }
 }
