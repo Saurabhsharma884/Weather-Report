@@ -1,10 +1,12 @@
+body {
+  font-family: "Roboto Mono", monospace;
+  /* background-color: rgb(22,47,55); */
+  /* background-color: rgb(253,211,172); */
+  /* background-image: radial-gradient(farthest-corner at 20% 100% ,white 5%,yellow,orange,rgb(145, 9, 77),rgb(63, 45, 105)); */
+}
 .w-box {
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
     rgba(0, 0, 0, 0.22) 0px 10px 10px;
-}
-
-.list-group-item {
-  background-color: rgb(216, 216, 216);
 }
 
 #aqi-box {
@@ -15,21 +17,33 @@
   text-align: center;
   padding: 5px;
 }
-
-body {
-  font-family: "Roboto Mono", monospace;
-  /* background-color: rgb(22,47,55); */
-  /* background-color: rgb(253,211,172); */
-  /* background-image: radial-gradient(farthest-corner at 20% 100% ,white 5%,yellow,orange,rgb(145, 9, 77),rgb(63, 45, 105)); */
+.t {
+  text-align: center;
+ padding: 10px;
 }
 
+#w-location {
+  color: rgb(39, 0, 0);
+}
+#w-string{
+  color: black;
+}
 .field {
+  text-align: center;
   font-family: "Roboto Mono", monospace;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   color: black;
   font-weight: bolder;
 }
 .value {
-    font-size: 1.4rem;
-    color: rgb(53, 53, 53);
+  text-align: center;
+  font-size: 1.2rem;
+  color: rgb(53, 53, 53);
+}
+.mode-btn {
+  padding: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: white;
+  margin: 20px;
 }
