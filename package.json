@@ -1,0 +1,23 @@
+{
+  "name": "weather-report",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Saurabhsharma884/Weather-Report.git"
+  },
+  "author": "SAURABH SHARMA",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Saurabhsharma884/Weather-Report/issues"
+  },
+  "homepage": "https://github.com/Saurabhsharma884/Weather-Report#readme",
+  "dependencies": {
+    "express.js": "^1.0.0"
+  }
+}
