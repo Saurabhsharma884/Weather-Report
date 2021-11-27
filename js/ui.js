@@ -16,10 +16,10 @@ class UI {
     this.desc.textContent = weather.current.condition.text;
     this.string.textContent = `${weather.current.temp_c} \u00B0C`;
     this.icon.setAttribute("src", weather.current.condition.icon);
-    this.humidity.textContent = `Relative Humidity : ${weather.current.humidity}%`;
-    this.feelsLike.textContent = `Feels Like : ${weather.current.feelslike_c} \u00B0C`;
-    this.uv.textContent = `UV : ${weather.current.uv}`;
-    this.wind.textContent = `Wind Speed : ${weather.current.wind_kph} mph`;
+    this.humidity.textContent = `${weather.current.humidity}%`;
+    this.feelsLike.textContent = `${weather.current.feelslike_c} \u00B0C`;
+    this.uv.textContent = `${weather.current.uv}`;
+    this.wind.textContent = `${weather.current.wind_kph} mph`;
     const aqi = weather.current.air_quality["us-epa-index"];
     console.log(aqi)
     this.setAQI(aqi);
