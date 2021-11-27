@@ -13,12 +13,12 @@ class UI {
   paint(weather) {
     this.location.textContent = `${weather.location.name},${weather.location.region}`;
     this.desc.textContent = weather.current.condition.text;
-    this.string.textContent = `${weather.current.temp_c} \u00B0C`;
+    this.string.textContent = `${weather.current.temp_c}\u00B0C`;
     this.icon.setAttribute("src", weather.current.condition.icon);
     this.humidity.textContent = `${weather.current.humidity}%`;
-    this.feelsLike.textContent = `${weather.current.feelslike_c} \u00B0C`;
+    this.feelsLike.textContent = `${weather.current.feelslike_c}\u00B0C`;
     this.uv.textContent = `${weather.current.uv}`;
-    this.wind.textContent = `${weather.current.wind_kph} mph`;
+    this.wind.textContent = `${weather.current.wind_kph}mph`;
     const aqi = weather.current.air_quality["us-epa-index"];
     console.log(aqi)
     this.setAQI(aqi);

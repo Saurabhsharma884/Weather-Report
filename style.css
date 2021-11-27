@@ -1,49 +1,104 @@
 body {
+  height: 100vh;
   font-family: "Roboto Mono", monospace;
-  /* background-color: rgb(22,47,55); */
-  /* background-color: rgb(253,211,172); */
-  /* background-image: radial-gradient(farthest-corner at 20% 100% ,white 5%,yellow,orange,rgb(145, 9, 77),rgb(63, 45, 105)); */
+  background-image: linear-gradient(
+    135deg,
+    brown 30%,
+    red 30%,
+    red 70%,
+    yellow 70%,
+    yellow 100%
+  );
 }
 .w-box {
+  background-color: white;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
     rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
 #aqi-box {
-  margin-left: auto;
-  margin-right: auto;
+  border-radius: 40px;
   color: white;
   font-weight: bold;
   text-align: center;
-  padding: 5px;
+  padding: 5px 10px 5px 10px;
 }
 .t {
   text-align: center;
- padding: 10px;
+  padding: 10px;
 }
 
 #w-location {
   color: rgb(39, 0, 0);
 }
-#w-string{
+#w-string {
   color: black;
 }
+
 .field {
   text-align: center;
-  font-family: "Roboto Mono", monospace;
-  font-size: 1.5rem;
   color: black;
   font-weight: bolder;
 }
 .value {
   text-align: center;
-  font-size: 1.2rem;
-  color: rgb(53, 53, 53);
+  color: rgb(126, 126, 126);
 }
 .mode-btn {
+  cursor: pointer;
   padding: 10px;
-  border-radius: 50%;
-  display: inline-block;
+  border-radius: 50px;
+  display: inline-flex;
   background-color: white;
   margin: 20px;
+}
+
+@media (max-width: 576px) {
+  .field {
+    font-size: 1.25rem;
+  }
+  .value {
+    font-size: 1.25rem;
+  }
+  #w-location {
+    font-size: 1.75rem;
+  }
+}
+@media (min-width: 576px) {
+  .field {
+    font-size: 1.25rem;
+  }
+  .value {
+    font-size: 1.25rem;
+  }
+  #w-location {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 768px) {
+  .field {
+    font-size: 1.5rem;
+  }
+  .value {
+    font-size: 1.5rem;
+  }
+  #w-location {
+    font-size: 1.75rem;
+  }
+}
+@media (min-width: 992px) {
+  .field {
+    font-size: 1.75rem;
+  }
+  .value {
+    font-size: 1.25rem;
+  }
+  #w-location {
+    font-size: 2.25rem;
+  }
+}
+@media (min-width: 1200px) {
+  #w-location {
+    font-size: 2.5rem;
+  }
 }
