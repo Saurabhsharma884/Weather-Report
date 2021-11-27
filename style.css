@@ -3,15 +3,15 @@ body {
   font-family: "Roboto Mono", monospace;
   background-image: linear-gradient(
     135deg,
-    brown 30%,
-    red 30%,
-    red 70%,
-    yellow 70%,
-    yellow 100%
+    var(--g1) 30%,
+    var(--g2) 30%,
+    var(--g2) 80%,
+    var(--g3) 80%,
+    var(--g3) 100%
   );
 }
 .w-box {
-  background-color: white;
+  background-color: var(--boxColor);
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
     rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
@@ -29,20 +29,20 @@ body {
 }
 
 #w-location {
-  color: rgb(39, 0, 0);
+  color: var(--locColor);
 }
 #w-string {
-  color: black;
+  color: var(--tempColor);
 }
 
 .field {
   text-align: center;
-  color: black;
+  color: var(--fieldColor);
   font-weight: bolder;
 }
 .value {
   text-align: center;
-  color: rgb(126, 126, 126);
+  color: var(--valueColor);
 }
 .mode-btn {
   cursor: pointer;
@@ -51,6 +51,68 @@ body {
   display: inline-flex;
   background-color: white;
   margin: 20px;
+}
+
+.btn-primary {
+  color: var(--btnText);
+  background-color: var(--btnColor);
+  border-color: var(--btnBorderColor);
+}
+.btn-primary:hover {
+  background-color: var(--btnColor);
+  border-color: var(--btnBorderColor);
+}
+.modal-content{
+  background-color:var(--modalBg);
+  color: var(--fieldColor);
+}
+
+:root {
+  --white: #f8f8f8;
+  --brown: #301400;
+  --black: #000000;
+  --grey: #7e7e7e;
+  --yellow: #ffd000;
+  --darkBrown: #270000;
+  --darkRed: #cf0000;
+  --gColor1: #00007e;
+  --gColor2: #eeeeee;
+  --gColor3: #181b23;
+  --gColor4: #966200;
+  --gColor5: #4b0000;
+  --orange: #f7a100;
+  --primary: #007bff;
+  /* --gColor6: */
+}
+
+.dark {
+  --boxColor: var(--brown);
+  --fieldColor: var(--white);
+  --valueColor: var(--white);
+  --locColor: var(--yellow);
+  --tempColor: var(--white);
+  --g1: var(--gColor3);
+  --g2: var(--gColor4);
+  --g3: var(--gColor5);
+  --btnText: var(--black);
+  --btnColor: var(--orange);
+  --btnBorderColor: var(--orange);
+  --modalBg:var(--gColor3)
+}
+
+.light {
+  --boxColor: var(--white);
+  --fieldColor: var(--black);
+  --valueColor: var(--grey);
+  --locColor: var(--darkBrown);
+  --tempColor: var(--black);
+  --g1: var(--gColor1);
+  --g2: var(--gColor2);
+  --g3: var(--black);
+  --btnText: var(--white);
+  --btnColor: var(--primary);
+  --btnBorderColor: var(--primary);
+  --modalBg:var(--white);
 }
 
 @media (max-width: 576px) {
