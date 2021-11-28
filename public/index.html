@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap" rel="stylesheet">
     <!-- Bootstrap CSS -->
-  
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
@@ -17,25 +17,25 @@
 </head>
 
 <body>
-    <div class="mode-btn"> 
+    <div class="mode-btn">
     </div>
     <div class="container">
         <div class="row">
-            <div class="w-box col-12 col-md-6 mx-auto text-center text-light rounded p-5">
+            <div class="w-box col-12 col-md-6 mx-auto text-center text-light rounded">
                 <h1 id="w-location"></h1>
                 <h3 class="text-secondary" id="w-desc"></h3>
                 <h3 id="w-string"></h3>
                 <img id="w-icon">
                 <div class="box">
                     <div class="row">
-                        <div class="col-5 col-md-12 col-lg-5 t">
+                        <div class="col-5 col-md-6 col-lg-5 t">
                             <div class="col field">
                                 Humidity
                             </div>
                             <div class="col value" id="w-humidity">
                             </div>
                         </div>
-                        <div class="col-2 col-md-12 col-lg-2 t">
+                        <div class="col-2 col-md-6 col-lg-2 t">
                             <div class="col field">
                                 UV
                             </div>
@@ -51,7 +51,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-6 col-md-12 col-lg-6 t">
+                        <div class="col-6 col-md-6 col-lg-6 t">
                             <div class="col field">
                                 Wind Speed
                             </div>
@@ -59,7 +59,7 @@
                             </div>
                         </div>
 
-                        <div class="col-6 col-md-12 col-lg-6 t">
+                        <div class="col-6 col-md-6 col-lg-6 t">
                             <div class="col field">
                                 AQI
                             </div>
@@ -101,30 +101,6 @@
             </div>
         </div>
     </div>
-    <script type="module">
-        // Import the functions you need from the SDKs you need
-        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.5.0/firebase-app.js";
-        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.5.0/firebase-analytics.js";
-        // TODO: Add SDKs for Firebase products that you want to use
-        // https://firebase.google.com/docs/web/setup#available-libraries
-      
-        // Your web app's Firebase configuration
-        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-        const firebaseConfig = {
-          apiKey: "AIzaSyCUdfUpCzsx-KE4UcuLXSpBAn74ivrNVfU",
-          authDomain: "weather-report-e2724.firebaseapp.com",
-          projectId: "weather-report-e2724",
-          storageBucket: "weather-report-e2724.appspot.com",
-          messagingSenderId: "699007385459",
-          appId: "1:699007385459:web:b8054151cda34085b40f06",
-          measurementId: "G-Y73319DXHT"
-        };
-      
-        // Initialize Firebase
-        const app = initializeApp(firebaseConfig);
-        const analytics = getAnalytics(app);
-      </script>
-
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
@@ -138,7 +114,7 @@
     <script src="js/weather.js"></script>
     <script src="js/ui.js"></script>
     <script src="js/app.js"></script>
-    
+
 </body>
 
 </html>
